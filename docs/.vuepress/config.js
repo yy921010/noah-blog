@@ -18,4 +18,10 @@ module.exports = {
     "@vuepress/medium-zoom",
     "@vuepress/nprogress",
   ],
+  themeConfig: {
+    sideBar: {
+      "/": "sss",
+      "/guide": "guide",
+    },
+  },
 };
