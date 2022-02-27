@@ -16,7 +16,7 @@
       >
         {{ data.heroText || $title || 'Hello' }}
       </h1>
-
+      <div class="text-red-500">ssss</div>
       <p
         v-if="data.tagline !== null"
         class="description"

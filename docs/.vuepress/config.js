@@ -17,6 +17,8 @@ module.exports = {
     "@vuepress/back-to-top",
     "@vuepress/medium-zoom",
     "@vuepress/nprogress",
+    require("tailwindcss"),
+    require("autoprefixer"),
   ],
   themeConfig: {
     displayAllHeaders: true,
