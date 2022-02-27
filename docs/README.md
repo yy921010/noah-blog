@@ -1,16 +1,9 @@
 ---
-title: promise 冷知识
 sidebar: "auto"
-prev: true
-next: true
+home: true
 tags:
   - javascript
   - promise
-meta:
-  - name: description
-    content: promise 冷知识
-  - name: keywords
-    content: javascript promise
 ---
 
 ### promise 总结
@@ -115,3 +108,7 @@ console.log("你好，VuePress！");
 2. return 错误会让返回 promise 对象变为 reject
 3. 一般来说 **await** 后面的值是一个 promise
 4. 内部如果**await** 多个**promise**，则会等待所有**promise**执行完成才会执行**then**
+
+::: slot footer
+MIT Licensed | Copyright © 2018-present [Evan You](https://github.com/yyx990803)
+:::
