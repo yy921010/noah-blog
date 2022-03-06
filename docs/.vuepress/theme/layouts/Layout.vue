@@ -26,8 +26,8 @@
       </template>
     </Sidebar>
 
-    <Home v-if="$page.frontmatter.home" />
-
+    <NoahHome v-if="$page.frontmatter.home" />
+    <GateHome v-else-if="$page.frontmatter.gateHome"/>
     <Page
       v-else
       :sidebar-items="sidebarItems"
@@ -44,6 +44,8 @@
 
 <script>
 import Home from '@theme/components/Home.vue'
+import NoahHome from '@theme/components/NoahHome.vue'
+import GateHome from '@theme/components/Gate.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
@@ -56,7 +58,9 @@ export default {
     Home,
     Page,
     Sidebar,
-    Navbar
+    Navbar,
+    NoahHome,
+    GateHome
   },
 
   data () {

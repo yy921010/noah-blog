@@ -1,4 +1,5 @@
 ---
+home: true
 title: window 操作系统，安装 mongodb.zip 包
 tags:
   - mongodb
@@ -11,8 +12,6 @@ abstract:
 ---
 
 安装**mongodb.msc**文件时，最后一步总是报错，告诉你服务安装失败。于是下载了**mongodb** ZIP 包；也就是绿色版本，进行安装！
-
-<!--more-->
 
 ## 下载
 
@@ -30,7 +29,7 @@ abstract:
 
 1. 在自己磁盘中创建一个文件名字随便起，文件中创建三个文件夹分别为：`data`,`etc`,`logs`，结合上个，完整目录为：
 
-   ```yaml
+   ```ts
    mongodb #主文件夹
          data #用来存在数据库
          etc  #用来存储配置文件
